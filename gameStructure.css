@@ -36,9 +36,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border-radius: 8px;
     gap: 4px;
     padding: 4px;
+    border-radius: 8px;
     box-shadow: #4e4f4f 0px 0px 8px;
     cursor: pointer;
 }
