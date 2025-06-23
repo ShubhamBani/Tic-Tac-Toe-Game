@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f1e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f8f8cd;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.grid {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    padding: 4px;
+    box-shadow: #4e4f4f 0px 0px 8px;
+    cursor: pointer;
+}
+
+.cell {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.cell:hover {
+    background-color: #faf29b;
+}
+
+.game-result {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+
+.reset {
+    padding: 8px;
+    background-color: #1d1d1d;
+    color: #ffd86b;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.reset:hover {
+    background-color: #ffd86b;
+    color: #1d1d1d;
+}
